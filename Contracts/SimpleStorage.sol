@@ -30,7 +30,7 @@ contract SimpleStorage {
         favoriteNumber = _favoriteNumber;
        
     }
-    //bire, putr functions disallow any modifications of state (dont charge gas, doesnt make a transaction)
+    //bire, pure functions disallow any modifications of state (dont charge gas, doesnt make a transaction)
     function retrieve() public view returns(uint256){
         return favoriteNumber;
     }
